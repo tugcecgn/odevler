@@ -1,2 +1,3 @@
-# odevler
-patika+ ödevleri
+# Ödevler
+
+* Burada gördüğünüz projeler patika eğitimindeyken yaptığım ödevlerimdir.
