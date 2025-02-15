@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAZIM HİKMET</title>
+    <style>
+      :root {
+        --first-color: #b22222; /*şiirlerindeki aşkı ve acıyı temsil ettiği için kırmızıyı seçtim*/
+        --second-color: #f5f5f5;
+        --third-color: #1c1c1c;
+        --fourth-color: #87cefa; /*nazım hikmet mavi gözlü dev olarak anıldığı için maviyi seçtim*/
+      }
+      body {
+        background-color: #faf3e0;
+        font-family: Arial, sans-serif;
+        padding: 20px; /* Kenar boşluğu ekledik */
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Başlıkları güzelleştirme */
+      h1,
+      h2 {
+        color: var(--first-color);
+        font-family: "Playfair Display", serif;
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 1.5px;
+      }
+
+      /* İçeriği belirli bir genişliğe oturtma */
+      .container {
+        max-width: 900px; /* Sayfanın çok geniş görünmesini önler */
+        margin: auto; /* Sayfanın ortasına hizalar */
+        text-align: center;
+      }
+
+      nav {
+        background-color: #a52a2a; /* Daha yumuşak bir kırmızı tonu */
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: #8b0000;
+        border-radius: 15px;
+        transition: 0.4s;
+      }
+
+      ul {
+        list-style-type: none; /* Varsayılan madde işaretlerini kaldır */
+        padding: 0;
+      }
+
+      ul li {
+        background-color: var(--fourth-color);
+        color: black;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+      ul li ::before {
+        content: "📌"; /* Her liste elemanının başına simge ekledik */
+        color: black;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      footer {
+        background-color: var(--first-color);
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 10px;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+      }
+      .hero img {
+        max-width: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Hafif gölge ekledik */
+        display: block;
+        margin: auto;
+        border: 5px solid white; /* Beyaz çerçeve eklendi */
+      }
+
+      .hero-content {
+        background-color: var(--fourth-color);
+        border-radius: 10px;
+        text-align: center;
+        width: 800px;
+        height: 600px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hafif bir gölge ekledik */
+      }
+      article {
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        max-width: 90%; /* İçeriğin çok geniş olmasını engeller */
+  margin: 0 auto; /* Sayfanın ortasına hizalar */
+  text-align: justify; /* Daha düzenli bir görünüm için iki yana yaslama */
+      }
+      .standart{
+  list-style-type: disc;
+  padding-left: 20px;
+  background-color: transparent;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-indent: 20px;
+}
+
+
+
+.standart li {
+  background-color: transparent;
+  color: inherit;
+  font-weight: normal;
+  padding: 5px 0;
+  border-radius: 0;
+}
+
+mark {
+  background-color: #87cefa; /* Açık mavi arka plan */
+  color: #1c1c1c; /* Koyu metin rengi */
+  padding: 2px 5px; /* Daha iyi görünüm için iç boşluk ekledik */
+  border-radius: 5px; /* Köşeleri yuvarlak yapar */
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: var(--fourth-color)">Mavi Gözlü Dev, Nazım Hikmet</h1>
+    </header>
+
+    <div>
+      <nav class="nav">
+        <a href="#home">Ana sayfa</a>
+        <a href="#info">Hakkında</a>
+        <a href="#books">Kitapları</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <img
+          src="./nazım3.webp"
+          alt="Nazım Hikmet Portresi"
+          width="70%"
+          height="70%"
+          style="justify-content: center"
+        />
+        <blockquote style="font-size: x-large;">
+          "Yaşamak bir ağaç gibi tek ve hür ve bir orman gibi kardeşçesine..."
+          <cite>- Nazım Hikmet</cite>
+        </blockquote>
+      </div>
+    </section>
+    <!--NAZIM HİKMET HAKKINDA -->
+    <div id="info">
+      <article>
+        <h1>Nazım Hikmet Hakkında</h1>
+        <h2>📌 Aile Hayatı</h2>
+        <p>
+          Nazım Hikmet 15 Ocak 1902'de Selanik'te doğdu. Babası Hikmet Bey,
+          Osmanlı Devleti'nde çeşitli memuriyetlerde bulunmuş bir bürokrattı.
+          Annesi Celile Hanım, sanatçı bir kişiliğe sahipti; resimle ilgileniyor
+          ve Fransızca biliyordu. Annesinin sanatla iç içe olması, Nazım'ın
+          edebi yönünü besleyen en önemli etkenlerden biri oldu. Aile bağları
+          oldukça güçlüydü, ancak siyasi fikirleri nedeniyle uzun yıllar
+          hapislerde ve sürgünlerde kaldığı için ailesiyle kesintili görüşmek
+          zorunda kaldı. İlk evliliğini 1922’de Piraye Altınoğlu ile yaptı.
+          Piraye, Nazım’ın en büyük ilham kaynaklarından biri oldu ve ona pek
+          çok şiir yazdı. Ancak uzun süren hapishane yılları nedeniyle
+          ilişkileri yıprandı. Daha sonra Münevver Andaç ile evlendi ve bu
+          evlilikten Mehmet Nazım adında bir oğlu oldu.
+        </p>
+        <hr />
+        <!--EDEBİYATA KATKILARI -->
+        <h2>📌 Edebiyata Katkıları</h2>
+        <p>
+          Nazım Hikmet, Türk şiirine serbest ölçüyü getiren ilk şairlerden biri
+          olarak edebiyata büyük katkılarda bulunmuştur. Onun başlıca edebi
+          katkıları şunlardır:
+          <ul class="standart">
+            <li> Serbest Nazımın Öncüsü: Geleneksel hece ölçüsü yerine serbest nazım kullanarak Türk şiirinde bir devrim yapmıştır.</li>
+            <li> Gerçekçilik: Şiirlerinde işçi sınıfı, özgürlük, eşitlik gibi sosyalist düşünceleri işlemiştir.</li>
+            <li>Epik ve Destansı Şiirler: "Kuvâyi Milliye Destanı" gibi eserleriyle, tarihi olayları destansı bir dille anlatmıştır</li>
+            <li>Tiyatro, Roman ve Mektup Türünde Eserler: Sadece şiir değil, roman, tiyatro ve mektupları ile de edebiyata önemli katkılar sağlamıştır.</li>
+          </ul>
+           Nazım Hikmet, edebiyat anlayışını şu sözleriyle
+          özetlemiştir: “Sanat, halk içindir. Şiir, halkın sesi olmalıdır.” Bu
+          görüşü doğrultusunda eserlerinde halkın sorunlarını, ezilen insanları
+          ve özgürlük mücadelesini işlemiştir.
+        </p>
+        <hr />
+        <h2>📌 Karakteri ve Kişiliği</h2>
+        <p>
+          Nazım Hikmet, asi, cesur, idealist ve duygusal bir karaktere sahipti.
+          Onu anlatan bazı karakter özellikleri: ✔ Mücadeleci: Haksızlıklara
+          karşı duruş sergileyen ve inandığı davadan vazgeçmeyen biriydi.
+          Hayatının büyük kısmını hapishanede veya sürgünde geçirmesine rağmen
+          mücadelesini bırakmadı. ✔ Aşk Adamı: Kadınlara olan sevgisi ve aşkı,
+          şiirlerine de yansıdı. Piraye’ye ve Münevver’e yazdığı mektuplar ve
+          şiirler bunun en güzel örnekleridir. ✔ Vatansever: Türkiye’yi her
+          zaman çok sevdi, ancak siyasi nedenlerle 1951'de vatandaşlıktan
+          çıkarıldı. Buna rağmen memleket özlemi hiç dinmedi. ✔ İsyankar ve
+          Özgür Ruhlu: Otoriteye ve baskıya karşı sürekli bir başkaldırışı
+          vardı.
+        </p>
+        <hr />
+        <h2>📌 Ölümü ve Mirası</h2>
+        <p>
+          Nazım Hikmet, 3 Haziran 1963’te Moskova’da kalp krizi geçirerek
+          hayatını kaybetti. Vasiyetinde Türkiye’ye gömülmek istediğini
+          belirtmesine rağmen, hâlâ Moskova’daki Novodeviçi Mezarlığı’nda
+          yatmaktadır. Eserleri, günümüzde hâlâ Türk edebiyatının en önemli
+          yapıtları arasında yer alır. Dünya genelinde de birçok dile çevrilmiş
+          ve birçok ülkede büyük bir saygı görmüştür.
+        </p>
+        <hr />
+        <h2>📌 Sonuç</h2>
+        <p>
+          Nazım Hikmet, yalnızca bir şair değil, aynı zamanda fikirleriyle
+          toplumu değiştiren bir düşünce adamıdır. Onun eserleri, sosyal adalet,
+          özgürlük, aşk ve vatan sevgisi gibi evrensel konuları içermesi
+          nedeniyle bugün de güncelliğini korumaktadır. 🖋 Onu en iyi anlatan
+          sözlerden biri: "Yaşamak bir ağaç gibi tek ve hür ve bir orman gibi
+          kardeşçesine..." 🌿 💙 <mark> Mavi Gözlü Dev</mark> olarak anılan Nazım Hikmet’i
+          şiirleri, idealleri ve cesareti ile her zaman hatırlayacağız.
+        </p>
+      </article>
+    </div>
+<!--ESERLERİ-->
+    <div id="books" style="padding-top: 30px;padding-bottom:30px ;">
+      <article>
+        <h1>Eserleri</h1>
+        <ul>
+          <li>
+            Şiir kitapları
+            <ul>
+              <li>835 Satır (1929)</li>
+              <li>Jokond ile Si-Ya-U (1929)</li>
+              <li>Varan 3 (1930)</li>
+              <li>1+1=1 (1930)</li>
+              <li>Sesini Kaybeden Şehir (1931)</li>
+              <li>Benerci Kendini Niçin Öldürdü? (1932)</li>
+              <li>Gece Gelen Telgraf (1932)</li>
+              <li>Taranta Babu'ya Mektuplar (1935)</li>
+              <li>Simavne Kadısı Oğlu Şeyh Bedreddin Destanı (1936)</li>
+              <li>Kuvâyi Milliye Destanı (1965, ölümünden sonra yayımlandı)</li>
+            </ul>
+          </li>
+          <li>
+            Romanları
+            <ul>
+              <li>Kan Konuşmaz(1936)</li>
+              <li>
+                Yaşamak Güzel Şey Be Kardeşim (1965, ölümünden sonra yayımlandı)
+              </li>
+            </ul>
+          </li>
+          <li>
+            Tiyatro oyunları
+            <ul>
+              <li>Kafatası (1932)</li>
+              <li>Bir Ölü Evi (1932)</li>
+              <li>Unutulan Adam (1935)</li>
+              <li>İnek (1954)</li>
+            </ul>
+          </li>
+          <li>
+            Mektupları ve yazıları
+            <ul>
+              <li>Kemal Tahir'e Mahpushaneden Mektuplar</li>
+              <li>Cezaevinden Memet Fuat'a Mektuplar</li>
+              <li>Bütün Yazıları</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <footer>
+      <p>Page Made For Patika+ Assignment</p>
+    </footer>
+  </body>
+</html>
