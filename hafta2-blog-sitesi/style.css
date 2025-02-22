@@ -1,0 +1,97 @@
+*{
+    font-family: arial,sans-serif;
+}
+header{
+    display: flex;
+    background-color: #333;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+header h1::first-letter{
+    color: rgb(186, 89, 163);
+}
+.nav-ul{
+    list-style: none ;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+    
+}
+.nav-ul a:hover{
+    color:blanchedalmond;
+
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px;
+
+
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    display: flex;
+    
+  
+}
+.box:hover{
+    transform: scale(1.03);
+    transition: transform 0.4s ease-in-out;
+}
+.yazi{
+    flex-grow: 2;
+    margin: 70px;
+
+
+}
+.yazi h2{
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+}
+.yazi article{
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 26px;
+
+}
+.sirasi{
+    order: 3;
+}
+img{
+    flex-grow: 1;
+    width: 350px;
+    height: 350px;
+    margin: 40px;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: start;
+}
+footer p{
+    text-align: end;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
