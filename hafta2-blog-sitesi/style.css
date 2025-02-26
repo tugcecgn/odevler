@@ -11,6 +11,9 @@ header{
     
 
 }
+/* .last-post-title{
+    padding:30px 0  0 100px
+} */
 header h1::first-letter{
     color: rgb(186, 89, 163);
 }
