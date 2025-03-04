@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saat ve Karşılama</title>
+    <style>
+        body{
+            background-color: black;
+            color: #e98208;
+            display: flex-col;
+            justify-items: center;
+            margin:70px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 2px;
+            text-align: center;
+
+        }
+
+        #saat{
+            font-size:xx-large;
+            font-weight: 900;
+            
+        }
+        #ad{
+            /* kullanıcıdan gelen isimlerin baş harfi büyük olacak */
+            text-transform: capitalize;
+            font-weight: 900;
+        }
+        b{
+            font-weight: 50;
+        }
+        img {
+            margin-top: 100px;
+            width: 80%;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin:10px;
+                font-size: small;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png" alt="kodluyoruz" class="rounded"/>
+    <h1>Merhaba, <span id="ad"></span>! Hoş Geldin!</h1>
+    <div id="saat"></div>
+    <h2>tarihinde <b>Kodluyoruz Frontend Web Development Patikası</b>'nın Javascript bölümü 1. ödevindesiniz.</h2>
+
+<script>
+    //saatin her an güncellenmesi için fonksiyon oluşturuyoruz
+    function guncelle(){
+        let simdi = new Date();
+        let saat = simdi.getHours().toString().padStart(2, '0');
+        let dakika = simdi.getMinutes().toString().padStart(2, '0');
+        let saniye = simdi.getSeconds().toString().padStart(2, '0');
+        let gun = simdi.getDay();
+        let gunler =["Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi","Pazar"]
+        let haftaningunleri = gunler[gun];
+
+    
+    let metin =`${saat} : ${dakika} :${saniye} ${haftaningunleri}`;
+    // textcontent ile html kodu içerisinde gösterebilriyoruz.
+    document.getElementById("saat").textContent = metin;
+    };
+    //setInterval ile kaç saniyede yenileceğinin bilgisini veriyoruz
+    setInterval(guncelle,1000);
+    guncelle();
+
+    let isim = prompt("isminizi girin :")
+    document.getElementById("ad").textContent = isim ;
+</script>
+</body>
+</html>
