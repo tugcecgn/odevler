@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hakkımızda </title>
+</head>
+<body>
+    <!--navbar-->
+    <header class="container-fluid">
+        <nav class="flex flex-col md:flex-row gap-6 bg-red-700 justify-around p-4 text-white ">
+            <ul class="flex flex-row gap-6" >
+                <li><a href="./index.html">Ana sayfa</a></li>
+                <li><a href="./hakkinda.html">Hakkında</a></li>
+                <li><a href="./servisler.html">Servisler</a></li>
+                <li><a href="./iletisim.html">İletişim</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <i class="fa-solid fa-scissors"></i>
+            </div>
+            <div class="flex bg-white rounded-md text-black">
+                <label for="search " >
+                    <i class="fa-solid fa-magnifying-glass text-black px-2"></i>
+                    <input type="text" placeholder="Search.." class="bg-white placeholder:text-gray-500 rounded-md p-1 focus:outline-none">
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <!-- form kısmı -->
+<div class="grid grid-rows md:grid-cols-2 gap-6 container mx-auto m-10 ">
+    <div class="shadow-lg rounded-md p-8">
+        <form action="" class="flex flex-col gap-4 justify-center">
+            <legend class="text-red-700 text-2xl font-semibold">Size Ulaşalım</legend>
+            <label for="ad">İsim:</label>
+            <input type="text"placeholder="İsminiz...">
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="emailiniz...">
+
+            <label for="mesage">Mesaj:</label>
+            <textarea name="mesage" id="mesage" placeholder="mesajınız..."></textarea>
+
+            <button type="submit" class="bg-red-700 text-white font-semibold rounded-lg p-1">Gönder</button>
+        </form>
+    </div>
+    <div class="flex flex-col gap-4 shadow-lg rounded-md p-8 ">
+        <h1 class="text-red-700 font-semibold text-2xl">Bize ulaşmak için:</h1>
+        <p>Her türlü soru, sipariş ve özel dikim talepleriniz için bizimle iletişime geçebilirsiniz. Size en iyi hizmeti sunabilmek için buradayız! Telefon, e-posta veya sosyal medya hesaplarımız üzerinden bize ulaşabilir, dilerseniz atölyemizi ziyaret ederek yüz yüze görüşebilirsiniz. Sizden haber almak bizi mutlu eder!</p>
+        <ul class="flex flex-col gap-2">
+            <li>📍 Adres:Cart curt mahallesi.çıkmaz sokak no:1 Türkiye'de bir yer</li>
+            <li>📞 Telefon:05555555555</li>
+            <li>📧 E-posta:falanfilan@gmail.com</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>
+    

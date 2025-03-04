@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ana Sayfa</title>
+</head>
+<body>
+    <!--navbar-->
+    <header class="container-fluid">
+        <nav class="flex flex-col md:flex-row gap-6 bg-red-700 justify-around p-4 text-white ">
+            <ul class="flex flex-row gap-6" >
+                <li><a href="#">Ana sayfa</a></li>
+                <li><a href="./hakkinda.html">Hakkında</a></li>
+                <li><a href="./servisler.html">Servisler</a></li>
+                <li><a href="./iletisim.html">İletişim</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <i class="fa-solid fa-scissors"></i>
+            </div>
+            <div class="flex bg-white rounded-md text-black">
+                <label for="search " >
+                    <i class="fa-solid fa-magnifying-glass text-black px-2"></i>
+                    <input type="text" placeholder="Search.." class="bg-white placeholder:text-gray-500 rounded-md p-1 focus:outline-none">
+                </label>
+            </div>
+        </nav>
+    </header>
+<!--section-->
+<section>
+<div class="">
+    <h1 class="font-semibold text-xl md:text-3xl py-6 flex justify-center">Özel Dikim ve Tamir Hizmetleri - Terzi Ferit</h1>
+    <div class="grid grid-rows md:grid-cols-3 container mx-auto gap-6 justify-center">
+        <div class="shadow-lg p-8 flex flex-col gap-4 max-w-[480px]">
+            <h3 class="text-red-700 font-semibold text-xl flex justify-center">Klasik ve Zarif Stil</h3>
+            <div class="flex justify-center ">
+                <img src="https://picsum.photos/200/300" alt="lorem picsum" class="object-content rounded-md w-full h-48">
+            </div>
+            <p >Dikişin sanata dönüştüğü yerdeyiz. Size özel tasarımlar için bekliyoruz! Bunlardan birini kullanabilir ya da biraz daha değişiklik yapabiliriz. Ne dersin? </p>
+        </div>
+        <div class="shadow-lg p-8 flex flex-col gap-4 max-w-[480px]">
+            <h3 class="text-red-700 font-semibold text-xl flex justify-center">Kusursuz Uyum, Usta İşçilik</h3>
+            <div class="flex justify-center ">
+                <img src="https://picsum.photos/id/40/200/300" alt="lorem picsum" class="object-content rounded-md w-full h-48">
+            </div>
+            <p >Dikişin sanata dönüştüğü yerdesiniz. Özel dikim ve kaliteli hizmetle stilinizi yeniden şekillendiriyoruz.</p>
+        </div>
+        <div class="shadow-lg p-8 flex flex-col gap-4 max-w-[480px] ">
+            <h3 class="text-red-700 font-semibold text-xl flex justify-center">Her Dikişte Mükemmellik</h3>
+            <div class="flex justify-center ">
+                <img src="https://picsum.photos/id/34/200/300" alt="lorem picsum" class="object-content rounded-md w-full h-48">
+            </div>
+            <p >Kendi stilinizi yaratın, biz de size en iyi şekilde yardımcı olalım.Umarım beğenirsiniz! Hangi tarzı daha çok seviyorsunuz? </p>
+        </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hakkımızda </title>
+</head>
+<body>
+    <!--navbar-->
+    <header class="container-fluid">
+        <nav class="flex flex-col md:flex-row gap-6 bg-red-700 justify-around p-4 text-white ">
+            <ul class="flex flex-row gap-6" >
+                <li><a href="./index.html">Ana sayfa</a></li>
+                <li><a href="./hakkinda.html">Hakkında</a></li>
+                <li><a href="./servisler.html">Servisler</a></li>
+                <li><a href="./iletisim.html">İletişim</a></li>
+            </ul>
+            <div class="hidden md:block">
+                <i class="fa-solid fa-scissors"></i>
+            </div>
+            <div class="flex bg-white rounded-md text-black">
+                <label for="search " >
+                    <i class="fa-solid fa-magnifying-glass text-black px-2"></i>
+                    <input type="text" placeholder="Search.." class="bg-white placeholder:text-gray-500 rounded-md p-1 focus:outline-none">
+                </label>
+            </div>
+        </nav>
+    </header>
+<!--serviisler-->
+<div class="container mx-auto m-10 grid gap-10">
+    <div>
+        <h1 class="text-2xl font-semibold text-red-700 p-3">Size Özel Hizmetler</h1>
+        <p>Müşterilerimize en kaliteli hizmeti sunmak için buradayız! Özel dikimden kıyafet tadilatına, gelinlik ve abiye tasarımlarından ev tekstiline kadar geniş bir yelpazede hizmet veriyoruz. İhtiyaçlarınıza uygun çözümler için bizimle iletişime geçebilirsiniz.</p>
+    </div>
+    <ol class="list-decimal list-inside flex flex-col gap-5">
+        <li class=" font-semibold">Kişiye Özel Dikim
+            <ul class="list-outside pl-5 flex flex-col gap-2 font-light">
+                <li class="before:content-['✔'] before:mr-2 ">Müşterilerin ölçülerine ve isteklerine göre özel tasarlanmış kıyafetler.</li>
+                <li class="before:content-['✔'] before:mr-2 ">Seçilen kumaşlar ve model doğrultusunda tamamen el işçiliğiyle hazırlanan tasarımlar.</li>
+                <li class="before:content-['✔'] before:mr-2 ">Özel günler için smokin, takım elbise, gelinlik ve abiye dikimi.</li>
+            </ul>
+        </li>
+        <li class="font-semibold">Kıyafet Tadilatı ve Onarımı
+            <ul class="list-outside pl-5 flex flex-col gap-2 font-light">
+            <li class="before:content-['✔'] before:mr-2 ">Daraltma, genişletme, paça boyu kısaltma ve uzatma gibi işlemler</li>
+            <li class="before:content-['✔'] before:mr-2 ">Yırtık veya sökük kıyafetlerin profesyonelce onarılması.</li>
+            <li class="before:content-['✔'] before:mr-2 ">Eski kıyafetleri modern bir görünüme kavuşturma.</li>
+            </ul>
+        </li>
+        <li class="font-semibold">Gelinlik ve Abiye Tasarımı
+            <ul class="list-outside pl-5 flex flex-col gap-2 font-light">
+                <li class="before:content-['✔'] before:mr-2 ">Prova süreciyle mükemmel uyum sağlanan tasarımlar.</li>
+                <li class="before:content-['✔'] before:mr-2 ">Müşterinin isteğine göre özel işlemeler, dantel detayları ve farklı kumaş seçenekleri.</li>
+                <li class="before:content-['✔'] before:mr-2 ">Özel günler için kişiye özel gelinlik ve abiye tasarımları.</li>
+            </ul>
+        </li>
+    </ol>
+
+</div>
+
+</body>
+</html>
