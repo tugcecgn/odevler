@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TO DO LİST</title>
+</head>
+<body>
+<div class="container mx-auto">
+    <!--turuncu alan-->
+    <div class="flex flex-col items-center bg-orange-400 py-6 gap-2">
+        <img
+        src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+        alt="kodluyoruz"
+        class="bg-white "
+        />
+        <h1 class="text-white font-semibold text-3xl">Yapılacaklar listesi</h1>
+        <div class="flex w-full px-10 ">
+        <input type="text" id="girdi" placeholder="Bugün ne yapacaksın?" class="bg-gray-100 w-3/4 py-2 px-4">
+        <button type="submit" id="buton" class="bg-gray-400 w-1/4 hover:transition hover:bg-gray-300 cursor-pointer" >Ekle</button>
+        </div>
+    </div>
+    <!--liste kısmı-->
+    <div>
+        <ul id="liste" class="flex flex-col text-lg cursor-pointer align-center ">
+            <li class="flex justify-between bg-gray-100 hover:transition duration-400 hover:bg-gray-400 py-3 px-10">3 litre su iç <i class="fa-solid fa-x delete-btn"></i></li>
+            <li class="flex justify-between bg-gray-200 hover:transition duration-400 hover:bg-gray-400 py-3 px-10">Ödevlerini yap<i class="fa-solid fa-x delete-btn"></i></li>
+            <li class="flex justify-between bg-gray-100 hover:transition duration-400 hover:bg-gray-400 py-3 px-10">Yemek yap<i class="fa-solid fa-x delete-btn"></i></li>
+            <li class="flex justify-between bg-gray-200 hover:transition duration-400 hover:bg-gray-400 py-3 px-10">50 sayfa kitap oku<i class="fa-solid fa-x delete-btn"></i></li>
+            <li class="flex justify-between bg-gray-100 hover:transition duration-400 hover:bg-gray-400 py-3 px-10">Javascript to do list yap<i class="fa-solid fa-x delete-btn"></i></li>
+        </ul>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
