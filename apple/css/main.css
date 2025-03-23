@@ -1,0 +1,11 @@
+@import './vendor.css'; /*burda yazılan sıra önemli çünkü vendorda yazılan cssleri ezmemiz gerekecek. */
+@import './common.css';
+@import './layouts/header.css';
+
+@import './sections/hero.css';
+@import './sections/camera.css';
+@import './sections/product.css';
+@import './sections/photos.css';
+@import './sections/ecosystem.css';
+@import './sections/faq.css';
+@import './sections/comments.css';

@@ -1,0 +1,8 @@
+#photos .photo img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    aspect-ratio: 1;/*öğelerin hepsinin en ve boy oranını eşitler ve resim sıkıştırılır. */
+    object-fit: cover;
+}
