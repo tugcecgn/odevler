@@ -1,0 +1,34 @@
+.detail-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 16px;
+    background-color: #272727;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.detail-container h2 {
+    font-size: 28px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+.detail-container p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: blueviolet;
+}
+
+.back-btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
